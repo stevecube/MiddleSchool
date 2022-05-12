@@ -30,6 +30,153 @@ label_output = ['시의 개념과 특성', '시적 화자'];
 label1_output = ['시', '정형시', '자유시', '산문시', '서정시', '서사시', '극시'];
 label2.innerHTML = label1_output[0] + start_2;
 outputt.innerHTML = '제출';
+function duplicate_check() {
+    const random1 = a[Math.floor(Math.random() * a.length)];
+    if (random1 == a[0]) {
+        a.shift();
+    }
+    else if (random1 == a[1]) {
+        a1 = a.slice(0, 1);
+        a2 = a.splice(2, 6);
+        a3 = a1.concat(a2);
+        a = a3;
+    }
+    else if (random1 == a[2]) {
+        a1 = a.slice(0, 2);
+        a2 = a.splice(3, 5);
+        a3 = a1.concat(a2);
+        a = a3;
+    }
+    else if (random1 == a[3]) {
+        a1 = a.slice(0, 3);
+        a2 = a.splice(4, 4);
+        a3 = a1.concat(a2);
+        a = a3;
+    }
+    else if (random1 == a[4]) {
+        a1 = a.slice(0, 4);
+        a2 = a.splice(5, 3);
+        a3 = a1.concat(a2);
+        a = a3;
+    }
+    else if (random1 == a[5]) {
+        a1 = a.slice(0, 5);
+        a2 = a.splice(6, 2);
+        a3 = a1.concat(a2);
+        a = a3;
+    }
+    else if (random1 == a[6]) {
+        a.pop();
+    }
+    const random2 = a[Math.floor(Math.random() * a.length)];
+    if (random2 == a[0]) {
+        a.shift();
+    }
+    else if (random2 == a[1]) {
+        a1 = a.slice(0, 1);
+        a2 = a.splice(2, 5);
+        a3 = a1.concat(a2);
+        a = a3;
+    }
+    else if (random2 == a[2]) {
+        a1 = a.slice(0, 2);
+        a2 = a.splice(3, 4);
+        a3 = a1.concat(a2);
+        a = a3;
+    }
+    else if (random2 == a[3]) {
+        a1 = a.slice(0, 3);
+        a2 = a.splice(4, 3);
+        a3 = a1.concat(a2);
+        a = a3;
+    }
+    else if (random2 == a[4]) {
+        a1 = a.slice(0, 4);
+        a2 = a.splice(5, 2);
+        a3 = a1.concat(a2);
+        a = a3;
+    }
+    else if (random2 == a[5]) {
+        a.pop();
+    }
+    const random3 = a[Math.floor(Math.random() * a.length)];
+    if (random3 == a[0]) {
+        a.shift();
+    }
+    else if (random3 == a[1]) {
+        a1 = a.slice(0, 1);
+        a2 = a.splice(2, 4);
+        a3 = a1.concat(a2);
+        a = a3;
+    }
+    else if(random3 == a[2]) {
+        a1 = a.slice(0, 2);
+        a2 = a.splice(3, 3);
+        a3 = a1.concat(a2);
+        a = a3;
+    }
+    else if (random3 == a[3]) {
+        a1 = a.slice(0, 3);
+        a2 = a.splice(4, 2);
+        a3 = a1.concat(a2);
+        a  = a3;
+    }
+    else if (random3 == a[4]) {
+        a.pop();
+    }
+    const random4 = a[Math.floor(Math.random() * a.length)];
+    if (random4 == a[0]) {
+        a.shift();
+    }
+    else if (random4 == a[1]) {
+        a1 = a.slice(0, 1);
+        a2 = a.splice(2, 3);
+        a3 = a1.concat(a2);
+        a = a3;
+    }
+    else if (random4 == a[2]) {
+        a1 = a.slice(0, 2);
+        a2 = a.splice(3, 2);
+        a3 = a1.concat(a2);
+        a = a3;
+    }
+    else if (random4 == a[3]) {
+        a.pop();
+    }
+    const random5 = a[Math.floor(Math.random() * a.length)];
+    if (random5 == a[0]) {
+        a.shift();
+    }
+    else if (random5 == a[1]) {
+        a1 = a.slice(0, 1);
+        a2 = a.splice(2, 2);
+        a3 = a1.concat(a2);
+        a = a3;
+    }
+    else if (random5 == a[2]) {
+        a.pop();
+    }
+    const random6 = a[Math.floor(Math.random() * a.length)];
+    if (random6 == a[0]) {
+        a.shift();
+    }
+    else if (random6 == a[1]) {
+        a.pop();
+    }
+    const random7 = a[Math.floor(Math.random() * a.length)];
+    if (random7 == a) {
+        a.pop();
+    }
+    console.log(a);
+    first.innerHTML = random1;
+    second.innerHTML = random2;
+    third.innerHTML = random3;
+    forth.innerHTML = random4;
+    fifth.innerHTML = random5;
+    sixth.innerHTML = random6;
+    seventh.innerHTML = random7;
+};
+duplicate_check();
 // 공용 함수
 function change_1() {
     label2.innerHTML = label1_output[1] + start_2;
@@ -44,134 +191,10 @@ function change_3() {
     score += 1;
 }
 function change_4() {
-    label2.innerHTML = 'Ls' + start_2;
+    label2.innerHTML = label1_output[4] + start_2;
     score += 1;
 }
 // 중복 체크 함수
-function duplicate_check() {
-    const random1 = a[Math.floor(Math.random() * a.length)];
-    if (random1 == a[0]) {
-        a = a.shift();
-    }
-    else if (random1 == a[1]) {
-        a1 = a.slice(0, 1);
-        a2 = a.splice(2, 4);
-        a3 = a1.concat(a2);
-        a = a3;
-    }
-    else if (random1 == a[2]) {
-        a1 = a.slice(0, 2);
-        a2 = a.splice(3, 3);
-        a3 = a1.concat(a2);
-        a = a3;
-    }
-    else if (random1 == a[3]) {
-        a1 = a.slice(0, 3);
-        a2 = a.splice(4, 2);
-        a3 = a1.concat(a2);
-        a = a3;
-    }
-    else if (random1 == a[4]) {
-        a1 = a.slice(0, 4);
-        a2 = a.splice(5, 1);
-        a3 = a1.concat(a2);
-        a = a3;
-    }
-    else if (random1 == a[5]) {
-        a1 = a.slice(0, 4);
-        a2 = a.splice(6, 1);
-        a3 = a1.concat(a2);
-        a = a3;
-    }
-    else if (random1 == a[6]) {
-        a.pop();
-        
-    }
-    const random2 = a[Math.floor(Math.random() * a.length)];
-    if (random2 == a[0]) {
-        a = a.shift();
-        
-    }
-    else if (random2 == a[1]) {
-        a1 = a.slice(0, 1);
-        a2 = a.splice(2, 4);
-        a3 = a1.concat(a2);
-        a = a3;
-    }
-    else if (random2 == a[2]) {
-        a1 = a.slice(0, 2);
-        a2 = a.splice(3, 3);
-        a3 = a1.concat(a2);
-        a = a3;
-    }
-    else if (random2 == a[3]) {
-        a1 = a.slice(0, 3);
-        a2 = a.splice(4, 2);
-        a3 = a1.concat(a2);
-        a = a3;
-    }
-    else if (random2 == a[4]) {
-        a1 = a.slice(0, 4);
-        
-        a2 = a.splice(5, 1);
-        a3 = a1.concat(a2);
-        a = a3;
-    }
-    else if (random2 == a[5]) {
-        a1 = a.slice(0, 4);
-        a2 = a.splice(6, 1);
-        a3 = a1.concat(a2);
-        a = a3;
-    }
-    else if (random2 == a[6]) {
-        a.pop();
-        
-    }
-    const random3 = a[Math.floor(Math.random() * a.length)];
-    if (random3 == a[0]) {
-        a = a.shift();
-        
-    }
-    else if (random3 == a[1]) {
-        a1 = a.slice(0, 1);
-        a2 = a.splice(2, 4);
-        a3 = a1.concat(a2);
-        a = a3;
-    }
-    else if (random3 == a[2]) {
-        a1 = a.slice(0, 2);
-        a2 = a.splice(3, 3);
-        a3 = a1.concat(a2);
-        a = a3;
-    }
-    else if (random3 == a[3]) {
-        a1 = a.slice(0, 3);
-        a2 = a.splice(4, 2);
-        a3 = a1.concat(a2);
-        a = a3;
-    }
-    else if (random3 == a[4]) {
-        a1 = a.slice(0, 4);
-        a2 = a.splice(5, 1);
-        a3 = a1.concat(a2);
-        a = a3;
-    }
-    else if (random3 == a[5]) {
-        a1 = a.slice(0, 4);
-        a2 = a.splice(6, 1);
-        a3 = a1.concat(a2);
-        a = a3;
-    }
-    else if (random3 == a[6]) {
-        a.pop();
-    }
-    const random4 = a[Math.floor(Math.random() * a.length)];
-    first.innerHTML = random1;
-    second.innerHTML = random2;
-    third.innerHTML = random3;
-    forth.innerHTML = random4;
-};
-duplicate_check();
 outputt.addEventListener('click', function() {
     const inputt = input1.value;
     if (score == 0) {
@@ -209,6 +232,36 @@ outputt.addEventListener('click', function() {
             label_1.innerHTML = correct;
             correctorincorrect = true;
             change_4();
+        }
+        else {
+            label_1.innerHTML = incorrect;
+        }
+    }
+    else if (score == 4) {
+        if (input == EE) {
+            label_1.innerHTML = correct;
+            correctorincorrect = true;
+            change_5();
+        }
+        else {
+            label_1.innerHTML = incorrect;
+        }
+    }
+    else if (score == 5) {
+        if (input == FF) {
+            label_1.innerHTML = correct;
+            correctorincorrect = true;
+            change_6();
+        }
+        else {
+            label_1.innerHTML = incorrect;
+        }
+    }
+    else if (score == 6) {
+        if (input == GG) {
+            label_1.innerHTML = correct;
+            correctorincorrect = true;
+            change_7();
         }
         else {
             label_1.innerHTML = incorrect;
