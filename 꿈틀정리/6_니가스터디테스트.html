@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>JS - 배열과 for in문</title>
+        <script>
+            //문제) 전국 지역번호를 선택상자에 담으시오.
+            //- 02, 031, ...
+            var areaCode = ['02','031','032','033','041','042','043','044','051','052','053','054','055','061','062','063','064'];
+
+            var output = '<select>';
+
+            for(var i in areaCode){
+                output += '<option>' + areaCode[i] + '</option>';
+            }
+
+            output += '</select>';
+
+            //문서출력
+            document.write(output);
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

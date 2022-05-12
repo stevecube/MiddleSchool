@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+html, body {
+    color: #1e2343;
+    background: #f0efee;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    html, body {
+        color: #fff;
+        background: #1d1e20;
+    }
+}
